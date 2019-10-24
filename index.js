@@ -12,8 +12,7 @@ bot.on("message", (message) => {
   if (!message.guild) return
     let args = message.content.trim().split(/ +/g)
   if (args[0].toLowerCase() === prefix + "hola") {
-      let answers = ["ey baby! ", "Hola, espero que traigas un salchichón para mí :yum: ", "Hola! podrías ayudarme a elegir un objeto para un talismán! tú tienes 
-buen gusto, siempre estás bonita!", "Hola! has dormido bien? tienes los ojos tan hundidos que podría encajar huevos de Boltue", "Toma un té con vitaminas para aguantar el día ¿ok?", "Voy llegando tarde!! me quedé explorando en la misión", "Has visto mi kit de navegacion?"]
+      let answers = ["ey baby! ", "Hola, espero que traigas un salchichón para mí :yum: ", "Hola! podrías ayudarme a elegir un objeto para un talismán! tú tienes buen gusto, siempre estás bonita!", "Hola! has dormido bien? tienes los ojos tan hundidos que podría encajar huevos de Boltue", "Toma un té con vitaminas para aguantar el día ¿ok?", "Voy llegando tarde!! me quedé explorando en la misión", "Has visto mi kit de navegacion?"]
     message.reply(answers[Math.floor(Math.random() * answers.length)]);  
   }
   if (message.content.startsWith("Chrome, y Karenn?")) {
