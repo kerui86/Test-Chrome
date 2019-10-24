@@ -15,7 +15,7 @@ bot.on("message", (message) => {
   if (message.content.startsWith(prefix + "hola")) {
     message.reply("ey baby!");  
   }
-  if (message.content.startsWith(prefix + "Chrome, y Karenn?")) {
+  if (message.content.startsWith("Chrome, y Karenn?")) {
     message.channel.send("p-porque preguntas por ella tan de pronto?");
   }
   if (message.content === prefix + "pre") {
